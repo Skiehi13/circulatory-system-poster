@@ -1,219 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparative Circulatory Systems in Vertebrates</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Comparative Vertebrate Circulatory Systems</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="poster-container">
-        <!-- Header -->
-        <header class="poster-header">
-            <h1>Comparative Analysis of Circulatory Systems Across Five Vertebrate Classes</h1>
-            <p class="subtitle">A Veterinary Science Perspective on Cardiovascular Evolution and Function</p>
-        </header>
 
-        <!-- Main Content -->
-        <main class="poster-content">
-            
-            <!-- Leopard Shark Section -->
-            <section class="species-section" data-class="chondrichthyes">
-                <div class="species-header">
-                    <h2>LEOPARD SHARK</h2>
-                    <p class="scientific-name"><em>Triakis semifasciata</em></p>
-                    <p class="classification">Class: Chondrichthyes</p>
-                </div>
-                
-                <div class="species-content">
-                    <div class="images-container">
-                        <div class="species-photo">
-                            <img src="images/leopard-shark.jpg" alt="Leopard Shark" class="species-image">
-                            <p class="image-caption">Figure 1A: Leopard shark (<em>Triakis semifasciata</em>) demonstrating typical benthic habitat behavior.</p>
-                        </div>
-                        
-                        <div class="anatomy-diagram">
-                            <img src="images/fish-circulatory-diagram.png" alt="Fish Circulatory System" class="diagram-image">
-                            <p class="image-caption">Figure 1B: Circulatory system showing single atrium, ventricle, and unidirectional blood flow.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h3>Key Characteristics:</h3>
-                        <ul>
-                            <li>Single-loop circulatory system with unidirectional blood flow</li>
-                            <li>Two-chambered heart: single atrium and single ventricle</li>
-                            <li>Blood passes through gills for oxygenation before reaching body tissues</li>
-                            <li>Lower blood pressure compared to mammals and birds</li>
-                            <li>Conus arteriosus with valves prevents backflow into ventricle</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+<div class="poster-container">
 
-            <!-- Andean Cock-of-the-Rock Section -->
-            <section class="species-section" data-class="aves">
-                <div class="species-header">
-                    <h2>ANDEAN COCK-OF-THE-ROCK</h2>
-                    <p class="scientific-name"><em>Rupicola peruvianus</em></p>
-                    <p class="classification">Class: Aves</p>
-                </div>
-                
-                <div class="species-content">
-                    <div class="images-container">
-                        <div class="species-photo">
-                            <img src="images/andean-cock-of-the-rock.jpg" alt="Andean Cock-of-the-Rock" class="species-image">
-                            <p class="image-caption">Figure 2A: Male Andean cock-of-the-rock displaying vibrant plumage for mating displays.</p>
-                        </div>
-                        
-                        <div class="anatomy-diagram">
-                            <img src="images/bird-heart-diagram.png" alt="Bird Heart Anatomy" class="diagram-image">
-                            <p class="image-caption">Figure 2B: Four-chambered avian heart with complete ventricular septation and right aortic arch.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h3>Key Characteristics:</h3>
-                        <ul>
-                            <li>Four-chambered heart with complete separation of blood types</li>
-                            <li>High metabolic rate supports flight and display behaviors</li>
-                            <li>Right aortic arch (unlike mammals which have left aortic arch)</li>
-                            <li>Large heart relative to body size for high oxygen demands</li>
-                            <li>Rapid heart rate (up to 400+ bpm) for sustained flight</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+  <header class="poster-header">
+    <h1>Comparative Circulatory Systems Across Five Vertebrate Classes</h1>
+    <p><em>A scientific poster highlighting the diversity of vertebrate cardiovascular adaptations</em></p>
 
-            <!-- Black-footed Cat Section -->
-            <section class="species-section" data-class="mammalia">
-                <div class="species-header">
-                    <h2>BLACK-FOOTED CAT</h2>
-                    <p class="scientific-name"><em>Felis nigripes</em></p>
-                    <p class="classification">Class: Mammalia</p>
-                </div>
-                
-                <div class="species-content">
-                    <div class="images-container">
-                        <div class="species-photo">
-                            <img src="images/black-footed-cat.jpg" alt="Black-footed Cat" class="species-image">
-                            <p class="image-caption">Figure 3A: Black-footed cat in natural arid habitat showing compact body structure.</p>
-                        </div>
-                        
-                        <div class="anatomy-diagram">
-                            <img src="images/mammal-heart-diagram.png" alt="Mammalian Heart Anatomy" class="diagram-image">
-                            <p class="image-caption">Figure 3B: Mammalian four-chambered heart with left aortic arch and coronary circulation.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h3>Key Characteristics:</h3>
-                        <ul>
-                            <li>Four-chambered heart with complete double circulation</li>
-                            <li>Left aortic arch develops (right aortic arch regresses)</li>
-                            <li>High blood pressure for efficient oxygen delivery</li>
-                            <li>Coronary circulation provides oxygen directly to heart muscle</li>
-                            <li>Rapid metabolic rate supports active hunting behavior</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+    <!-- Fullscreen and Scroll Toggle Buttons -->
+    <button id="fullscreen-btn" class="fullscreen-toggle">Enter Fullscreen</button>
+    <button id="scroll-toggle-btn" class="scroll-toggle">Disable Scroll</button>
+  </header>
 
-            <!-- Surinam Toad Section -->
-            <section class="species-section" data-class="amphibia">
-                <div class="species-header">
-                    <h2>SURINAM TOAD</h2>
-                    <p class="scientific-name"><em>Pipa pipa</em></p>
-                    <p class="classification">Class: Amphibia</p>
-                </div>
-                
-                <div class="species-content">
-                    <div class="images-container">
-                        <div class="species-photo">
-                            <img src="images/surinam-toad.jpg" alt="Surinam Toad" class="species-image">
-                            <p class="image-caption">Figure 4A: Surinam toad showing flattened body adaptation for aquatic lifestyle.</p>
-                        </div>
-                        
-                        <div class="anatomy-diagram">
-                            <img src="images/amphibian-heart-diagram.png" alt="Amphibian Heart Anatomy" class="diagram-image">
-                            <p class="image-caption">Figure 4B: Three-chambered amphibian heart with partial ventricular septation and dual circulation.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h3>Key Characteristics:</h3>
-                        <ul>
-                            <li>Three-chambered heart with two atria and single ventricle</li>
-                            <li>Relies heavily on cutaneous (skin) respiration underwater</li>
-                            <li>Muscular ridges in ventricle minimize blood mixing</li>
-                            <li>Pulmocutaneous circulation serves both lungs and skin</li>
-                            <li>Flexible respiratory system adapted to aquatic lifestyle</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Mata Mata Turtle Section -->
-            <section class="species-section" data-class="reptilia">
-                <div class="species-header">
-                    <h2>MATA MATA TURTLE</h2>
-                    <p class="scientific-name"><em>Chelus fimbriata</em></p>
-                    <p class="classification">Class: Reptilia</p>
-                </div>
-                
-                <div class="species-content">
-                    <div class="images-container">
-                        <div class="species-photo">
-                            <img src="images/mata-mata-turtle.jpg" alt="Mata Mata Turtle" class="species-image">
-                            <p class="image-caption">Figure 5A: Mata mata turtle underwater showing camouflage adaptations and fringed neck.</p>
-                        </div>
-                        
-                        <div class="anatomy-diagram">
-                            <img src="images/reptile-heart-diagram.png" alt="Reptilian Heart Anatomy" class="diagram-image">
-                            <p class="image-caption">Figure 5B: Reptilian heart with three chambers and cardiac shunting capability for diving.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h3>Key Characteristics:</h3>
-                        <ul>
-                            <li>Three-chambered heart with cardiac shunting capability</li>
-                            <li>Can bypass lungs when submerged through right-to-left shunting</li>
-                            <li>Incomplete ventricular septum allows blood flow redirection</li>
-                            <li>Adapted for long periods underwater without breathing</li>
-                            <li>Muscular ridges help separate oxygenated and deoxygenated blood</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- References Section -->
-        <footer class="references-section">
-            <h2>References (APA 7 Format)</h2>
-            <div class="references-content">
-                <p>Burggren, W., Filogonio, R., & Wang, T. (2020). Cardiovascular shunting in vertebrates: A practical integration of competing hypotheses. <em>Biological Reviews, 95</em>(2), 449-471.</p>
-                
-                <p>Gamperl, A. K., Milsom, W. K., Farrell, A. P., & Wang, T. (1999). Cardiorespiratory responses of the toad (<em>Bufo marinus</em>) to hypoxia at two different temperatures. <em>Journal of Experimental Biology, 202</em>, 3647-3658.</p>
-                
-                <p>Hanemaaijer, N. M., Moorman, A. F., & Christoffels, V. M. (2019). The reptilian perspective on mammalian and avian cardiac septation. <em>PLoS ONE, 14</em>(2), e0209651.</p>
-                
-                <p>Hicks, J. W. (1998). Cardiac shunting in reptiles: Mechanisms, regulation and physiological functions. In <em>Biology of the Reptilia</em> (Vol. 19, pp. 425-483). Academic Press.</p>
-                
-                <p>Jensen, B., Moorman, A. F., & Wang, T. (2014). Structure and function of the hearts of lizards and snakes. <em>Biological Reviews, 89</em>(2), 302-336.</p>
-                
-                <p>Johansen, K., & Hanson, D. (1968). Functional anatomy of the hearts of lungfishes and amphibians. <em>American Zoologist, 8</em>(2), 191-210.</p>
-                
-                <p>Kardong, K. V. (2006). <em>Vertebrates: Comparative anatomy, function, evolution</em> (4th ed.). McGraw-Hill.</p>
-                
-                <p>Lai, N. C., Graham, J. B., & Burnett, L. E. (1990). Blood respiratory properties and the effect of swimming on blood gas transport in the leopard shark <em>Triakis semifasciata</em>. <em>Journal of Experimental Biology, 151</em>, 161-173.</p>
-                
-                <p>Poelmann, R. E., & Gittenberger-de Groot, A. C. (2019). Development and evolution of the metazoan heart. <em>Developmental Dynamics, 248</em>(8), 634-656.</p>
-            </div>
-        </footer>
+  <section class="species-section" id="leopard-shark" data-class="chondrichthyes">
+    <h2>Class Chondrichthyes: Leopard Shark (<em>Triakis semifasciata</em>)</h2>
+    <div class="images-container">
+      <figure class="species-photo">
+        <img src="images/leopard-shark.jpg" alt="Leopard Shark Photograph" class="species-image" />
+        <figcaption>Leopard Shark photograph</figcaption>
+        <p class="citation">Lai, N. C., Graham, J. B., & Burnett, L. E. (1990). Journal of Experimental Biology, 151, 161-173.</p>
+      </figure>
+      <figure class="anatomy-diagram">
+        <img src="images/fish-circulatory-diagram.png" alt="Fish Circulatory System Diagram" class="diagram-image" />
+        <figcaption>Fish circulatory system anatomy (two-chambered heart)</figcaption>
+        <p class="citation">Kardong, K. V. (2006). <em>Vertebrates: Comparative anatomy, function, evolution</em> (4th ed.). McGraw-Hill.</p>
+      </figure>
     </div>
+  </section>
 
-    <script src="app.js"></script>
+  <section class="species-section" id="surinam-toad" data-class="amphibia">
+    <h2>Class Amphibia: Surinam Toad (<em>Pipa pipa</em>)</h2>
+    <div class="images-container">
+      <figure class="species-photo">
+        <img src="images/surinam-toad.jpg" alt="Surinam Toad Photograph" class="species-image" />
+        <figcaption>Surinam toad (Pipa pipa) in natural setting</figcaption>
+        <p class="citation">Burggren, W., Filogonio, R., & Wang, T. (2020). Biological Reviews, 95(2), 449-471.</p>
+      </figure>
+      <figure class="anatomy-diagram">
+        <img src="images/amphibian-heart-diagram.png" alt="Amphibian Heart Anatomy Diagram" class="diagram-image" />
+        <figcaption>Amphibian heart anatomy (three-chambered with partial septation)</figcaption>
+        <p class="citation">Johansen, K., & Hanson, D. (1968). American Zoologist, 8(2), 191-210.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="species-section" id="mata-mata-turtle" data-class="reptilia">
+    <h2>Class Reptilia: Mata Mata Turtle (<em>Chelus fimbriata</em>)</h2>
+    <div class="images-container">
+      <figure class="species-photo">
+        <img src="images/mata-mata-turtle.jpg" alt="Mata Mata Turtle Photograph" class="species-image" />
+        <figcaption>Mata mata turtle underwater side view</figcaption>
+        <p class="citation">Hanemaaijer, N. M., Moorman, A. F., & Christoffels, V. M. (2019). PLoS ONE, 14(2), e0209651.</p>
+      </figure>
+      <figure class="anatomy-diagram">
+        <img src="images/reptile-heart-diagram.png" alt="Reptile Heart Anatomy Diagram" class="diagram-image" />
+        <figcaption>Reptile heart with three chambers and muscular ridge</figcaption>
+        <p class="citation">Hicks, J. W. (1998). In <em>Biology of the Reptilia</em> (Vol. 19, pp. 425-483). Academic Press.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="species-section" id="andean-cock-of-the-rock" data-class="aves">
+    <h2>Class Aves: Andean Cock-of-the-Rock (<em>Rupicola peruvianus</em>)</h2>
+    <div class="images-container">
+      <figure class="species-photo">
+        <img src="images/andean-cock-of-the-rock.jpg" alt="Andean Cock-of-the-Rock Photograph" class="species-image" />
+        <figcaption>Andean Cock-of-the-Rock photograph</figcaption>
+        <p class="citation">Poelmann, R. E., & Gittenberger-de Groot, A. C. (2019). Developmental Dynamics, 248(8), 634-656.</p>
+      </figure>
+      <figure class="anatomy-diagram">
+        <img src="images/bird-heart-diagram.png" alt="Bird Heart Anatomy Diagram" class="diagram-image" />
+        <figcaption>Bird heart anatomy with four chambers</figcaption>
+        <p class="citation">Jensen, B., Moorman, A. F., & Wang, T. (2014). Biological Reviews, 89(2), 302-336.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="species-section" id="black-footed-cat" data-class="mammalia">
+    <h2>Class Mammalia: Black-footed Cat (<em>Felis nigripes</em>)</h2>
+    <div class="images-container">
+      <figure class="species-photo">
+        <img src="images/black-footed-cat.jpg" alt="Black-footed Cat Photograph" class="species-image" />
+        <figcaption>Black-footed cat (Felis nigripes)</figcaption>
+        <p class="citation">Kardong, K. V. (2006). <em>Vertebrates: Comparative anatomy, function, evolution</em> (4th ed.). McGraw-Hill.</p>
+      </figure>
+      <figure class="anatomy-diagram">
+        <img src="images/mammal-heart-diagram.png" alt="Mammalian Heart Anatomy Diagram" class="diagram-image" />
+        <figcaption>Mammalian heart anatomy with four chambers and complete septum</figcaption>
+        <p class="citation">Jensen, B., Moorman, A. F., & Wang, T. (2014). Biological Reviews, 89(2), 302-336.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="summary">
+    <h2>Evolutionary Trends and Functional Significance</h2>
+    <ul>
+      <li><strong>Circulation Complexity:</strong> From single-loop (fish) to double-loop circulation (tetrapods), with heart chambers increasing progressively (2 → 3 → 4) to meet metabolic demands.</li>
+      <li><strong>Metabolic Correlations:</strong> Ectothermic vertebrates (fish, amphibians, reptiles) have lower heart rates and variable body temperatures; endothermic vertebrates (birds and mammals) exhibit high heart rates and stable temperatures.</li>
+      <li><strong>Environmental Adaptations:</strong> Aquatic species have cardiac shunting for diving; terrestrial species have enhanced oxygen delivery mechanisms; flying species have specialized high-pressure hearts to support flight.</li>
+    </ul>
+  </section>
+
+  <section class="references">
+    <h2>Full Reference List (APA 7 Format)</h2>
+    <p>Burggren, W., Filogonio, R., & Wang, T. (2020). Cardiovascular shunting in vertebrates: A practical integration of competing hypotheses. <em>Biological Reviews, 95</em>(2), 449-471.</p>
+    <p>Gamperl, A. K., Milsom, W. K., Farrell, A. P., & Wang, T. (1999). Cardiorespiratory responses of the toad (<em>Bufo marinus</em>) to hypoxia at two different temperatures. <em>Journal of Experimental Biology, 202</em>, 3647-3658.</p>
+    <p>Hanemaaijer, N. M., Moorman, A. F., & Christoffels, V. M. (2019). The reptilian perspective on mammalian and avian cardiac septation. <em>PLoS ONE, 14</em>(2), e0209651.</p>
+    <p>Hicks, J. W. (1998). Cardiac shunting in reptiles: Mechanisms, regulation and physiological functions. In <em>Biology of the Reptilia</em> (Vol. 19, pp. 425-483). Academic Press.</p>
+    <p>Jensen, B., Moorman, A. F., & Wang, T. (2014). Structure and function of the hearts of lizards and snakes. <em>Biological Reviews, 89</em>(2), 302-336.</p>
+    <p>Johansen, K., & Hanson, D. (1968). Functional anatomy of the hearts of lungfishes and amphibians. <em>American Zoologist, 8</em>(2), 191-210.</p>
+    <p>Kardong, K. V. (2006). <em>Vertebrates: Comparative anatomy, function, evolution</em> (4th ed.). McGraw-Hill.</p>
+    <p>Lai, N. C., Graham, J. B., & Burnett, L. E. (1990). Blood respiratory properties and the effect of swimming on blood gas transport in the leopard shark <em>Triakis semifasciata</em>. <em>Journal of Experimental Biology, 151</em>, 161-173.</p>
+    <p>Poelmann, R. E., & Gittenberger-de Groot, A. C. (2019). Development and evolution of the metazoan heart. <em>Developmental Dynamics, 248</em>(8), 634-656.</p>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
