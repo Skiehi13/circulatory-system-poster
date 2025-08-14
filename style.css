@@ -116,21 +116,31 @@ body {
   text-align: center;
 }
 
+/* IMPROVED IMAGE STYLES */
 .species-image,
 .diagram-image {
   width: 100%;
   max-width: 400px;
-  height: 250px;
-  object-fit: cover;
+  height: auto;
+  min-height: 250px;
+  max-height: 350px;
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: var(--shadow);
   border: 2px solid var(--border-light);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: var(--background-white);
 }
 
+/* IMPROVED HOVER EFFECTS */
 .species-image:hover,
 .diagram-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: relative;
+  border-color: var(--primary-blue);
 }
 
 .image-caption {
@@ -217,6 +227,11 @@ body {
   .species-header h2 {
     font-size: 1.6rem;
   }
+  
+  .species-image,
+  .diagram-image {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -230,6 +245,11 @@ body {
   
   .species-header h2 {
     font-size: 1.4rem;
+  }
+  
+  .species-image:hover,
+  .diagram-image:hover {
+    transform: scale(1.05); /* Smaller hover effect on mobile */
   }
 }
 
@@ -247,5 +267,10 @@ body {
   .species-section {
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+  
+  .species-image:hover,
+  .diagram-image:hover {
+    transform: none; /* No hover effects in print */
   }
 }
