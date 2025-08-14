@@ -30,6 +30,8 @@ body {
   padding: 20px;
   background-color: var(--background-white);
   box-shadow: var(--shadow);
+  overflow-y: auto; /* Default scroll enabled */
+  height: auto;
 }
 
 /* Header Styles */
@@ -51,6 +53,31 @@ body {
   font-size: 1.2rem;
   color: var(--text-medium);
   font-style: italic;
+}
+
+/* Fullscreen and scroll toggle buttons */
+.fullscreen-toggle,
+.scroll-toggle {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 10px 10px 20px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fullscreen-toggle:hover,
+.scroll-toggle:hover {
+  background-color: var(--primary-teal);
+}
+
+/* Scroll toggle no-scroll class */
+.poster-container.no-scroll {
+  overflow-y: hidden;
+  height: 100vh; /* Fit viewport height */
 }
 
 /* Species Section Styles */
@@ -129,7 +156,7 @@ body {
   box-shadow: var(--shadow);
   border: 2px solid var(--border-light);
   transition: all 0.3s ease;
-  cursor: pointer;
+  cursor: zoom-in;
   background-color: var(--background-white);
 }
 
@@ -202,6 +229,29 @@ body {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text-dark);
+}
+
+/* Fullscreen enlarged image overlay */
+.image-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+.image-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(255,255,255,0.9);
+  transition: transform 0.3s ease;
 }
 
 /* Responsive Design */
